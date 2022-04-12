@@ -28,7 +28,9 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun MateTutoAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+fun MateTutoAppTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    content: @Composable () -> Unit) {
     val colors = if (darkTheme) {
         DarkColorPalette
     } else {
@@ -37,7 +39,7 @@ fun MateTutoAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Compo
 
     MaterialTheme(
         colors = colors,
-        typography = Typography,
+        typography = TypoMatetuto,
         shapes = Shapes,
         content = content
     )

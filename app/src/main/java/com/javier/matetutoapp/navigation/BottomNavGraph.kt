@@ -1,5 +1,6 @@
 package com.javier.matetutoapp.navigation
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -9,6 +10,7 @@ import com.javier.matetutoapp.screens.logrosScreen
 import com.javier.matetutoapp.screens.perfilScreen
 import com.javier.matetutoapp.screens.temasScreen
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun BottomNavGraph(navController: NavHostController){
     NavHost(

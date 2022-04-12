@@ -1,5 +1,6 @@
 package com.javier.matetutoapp
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -13,6 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import com.javier.matetutoapp.navigation.BottomBarScreen
 import com.javier.matetutoapp.navigation.BottomNavGraph
 
+@ExperimentalFoundationApi
 @Composable
 fun MainScreen() {
     val navController = rememberNavController()
